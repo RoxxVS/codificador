@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Permanent+Marker&display=swap');
+/*
+h1
+.permanent-marker-regular {
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+resto
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 400 to 700
+
+.kode-mono-<uniquifier> {
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+*/
+:root {
+    --color-uno: #10002B;
+    --color-dos: #3C096C;
+    --color-tres: #9D4EDD;
+    --color-cuatro: #E0AAFF;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 1.5vw;
+}
+body {
+    background-color: var(--color-uno);
+}
+h1 {
+    color: var(--color-cuatro);
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 5vh;
+}
+textarea {
+    display: block;
+    margin: 15vh auto;
+    color: var(--color-dos);
+    padding: 2%;
+}
+textarea::placeholder {
+    color: var(--color-tres);
+    
+}
+textarea:focus, button:hover {
+    box-shadow: 0 0 5px 5px var(--color-tres);
+    
+}
+#botones {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+button {
+    background-color: var(--color-dos);
+    color: var(--color-cuatro);
+    border: none;
+    padding: 1% 5%;
+}
+
+@media only screen and (max-width: 900px) {
+    * {
+        font-size: 2.5vw;
+    }
+    textarea {
+        margin: 10vh auto;
+        width: 80%;
+        height: 40%;
+    }
+}
+@media only screen and (max-width: 700px) {
+    * {
+        font-size: 3vw;
+    }
+    textarea {
+        margin: 5vh auto;
+    }
+}
+@media only screen and (max-width: 500px) {
+    * {
+        font-size: 4vw;
+    }
+    textarea {
+        margin: 10vh auto;
+        height: 60%;
+    }
+}
