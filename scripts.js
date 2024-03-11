@@ -24,6 +24,7 @@ function decodificar() {
     let textarea = document.getElementById('texto');
     let miTexto = textarea.value;
     miTexto = texto.replace(/s/ig, 'f').replace(/t7/ig, 'g').replace(/m8/ig, 'i').replace(/f/ig, 'p').replace(/g9/ig, 'y').replace(/i0/ig, 'v').replace(/l/ig, 'm').replace(/n/ig, 't').replace(/e6/ig, 's').replace(/u5/ig, 'l').replace(/q4/ig, 'n').replace(/d/ig, 'e').replace(/c/ig, 'u').replace(/b/ig, 'q').replace(/r/ig, 'd').replace(/o/ig, 'c').replace(/a/ig, 'b').replace(/3/ig, 'r').replace(/2/ig, 'o').replace(/1/ig, 'a');
+    textarea.value = miTexto;
     botonUno.innerText = 'Copiar';
     botonUno.removeEventListener('click', codificar);
     botonUno.addEventListener('click', copiar);
